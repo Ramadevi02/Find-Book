@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/a5b8707f99.js" crossorigin="anonymous"></script>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&family=Source+Sans+Pro:ital,wght@1,600&display=swap');
+        </style>
+
+        <link rel="stylesheet" href="WebBook.css">
+    </head>
+    <body>
+        <div class="container">
+            <div id="title" class="text-center mt-5 mb-3">
+                <h4>Book Finder</h4>
+                <div class="row"> 
+                    <div class="col-lg-6 col-md-8 col-sm-12 mx-auto">
+                        <div id="input" class="input-group mx-auto">
+                            <input type="text" class="form-control" id="inputText" placeholder="Search book!....">
+                            <button class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><hr class="clearfix"></div>
+            <div class="row spandiv">
+                <div class="col-lg-4 col-md-3 col-sm-12">
+                    <h6>Showing result for "<span class="searchspan"></span>"</h6>
+                </div>
+            <div class="dropdown col-lg-2 col-md-2 col-sm-12">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenu" data-bs-toggle="dropdown" aria-expanded="false">Filter</button>
+                <ul class="dropdown-menu" aria-labelledby="dropdowMenu">
+                    <!-- <li><button class="btn dropdown-item full">Full</button></li> -->
+                    <li><button class="btn dropdown-item all">All</button></li>
+                    <li><button class="btn dropdown-item free-ebooks">Free-ebooks</button></li>
+                    <li><button class="btn dropdown-item paid-ebooks">Paid-ebooks</button></li>
+                    <li><button class="btn dropdown-item ebooks">ebooks</button></li>
+                    <li><button class="btn dropdown-item books">Books</button></li> 
+                    <li><button class="btn dropdown-item magazines">Magazines</button></li>
+                    <li><button class="btn dropdown-item partial">Partial</button></li>
+                </ul>
+            </div>
+            </div>
+            <div><hr class="clearfix bg-light"></div>
+            <div class="book-list">
+                <div class="search-here my-5">
+                    <h2 class="text-center">Search Results</h2>
+                </div>
+                <div class="list-output">
+                    <!-- Result -->
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="WebBook.js"></script>
+    </body>
+</html>

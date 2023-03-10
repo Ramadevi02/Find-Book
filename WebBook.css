@@ -1,0 +1,107 @@
+body{
+    /* background-image: url('images/bookBg-2.jpg'); */
+    background-color: aliceblue;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+/* .list-output{
+    font-size: 20px;
+} */
+#inputText:focus, .btn:focus{
+    outline: none;
+    box-shadow: none;
+}
+#inputText{
+    border: 1px solid red;
+}
+.input-group .btn{
+    background-color: red;
+    color: white;
+}
+.search-here{
+    display: block;
+}
+.spandiv{
+    visibility: hidden;
+}
+.spandiv div{
+    margin: auto;
+}
+.searchspan{
+    color: red;
+}
+.dropdown{
+    /* visibility: hidden; */
+    margin: auto;
+    display: flex;
+    justify-content: end;
+    margin: auto;
+}
+.dropdown .btn{
+    color: red;
+    border-radius: 0%;
+}
+.dropdown-menu .btn:focus, .dropdown-menu .btn:hover{
+    background-color: burlywood;
+}
+.card-con{
+    margin-top: 1em;
+}
+.img-container{
+    padding: 1em;
+    background-color: white;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.img-container img{
+    height: 150px;
+    width: 100px;
+}
+.about{
+    background-color: white;
+    padding: 0;
+}
+.title{
+    padding-top: 0.5em;
+    font-weight: 400;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.author, .publisher{
+    margin-bottom: 0.5em;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.price{
+    color: red;
+    font-weight: 600;
+}
+.price i{
+    padding-left: 0.1em;
+}
+.priceread button{
+    background-color: red;
+    color: white;
+    border: 0;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+hr{
+    color: red;
+}
+@media only screen and (max-width: 578px) {
+    .card .colsm{
+        flex: 0 0 auto;
+        width: 100%;
+    }
+    .img-container, .card-body{
+        text-align: center;
+    }
+    .card{
+        margin: 0.4em 3em;
+        box-shadow:0 1.8em 3em 0;
+    }
+    
+}
