@@ -1,6 +1,7 @@
 var inputText = document.querySelector("#inputText");
 var button = document.querySelector(".btn");
 var title, author, publisher, bookImg, bookLink, price;
+var placeImg = 'https://placehold.co/100x150';
 var result = document.querySelector(".list-output");
 var partial = document.querySelector(".partial");
 var full = document.querySelector(".full");
@@ -155,7 +156,7 @@ function displayresult(data){
     title = item.volumeInfo.title;
     author = item.volumeInfo.authors;
     publisher = item.volumeInfo.publisher;
-    bookImg = item.volumeInfo.imageLinks.thumbnail;
+    bookImg = (item.volumeInfo.imageLinks) ? item.volumeInfo.imageLinks.thumbnail : placeImg;
     bookLink = item.volumeInfo.previewLink;
     // price = (item.saleInfo.saleability == "FOR_SALE") ? Math.round(item.saleInfo.listPrice.amount) :
     //                                                     signVisible() + item.saleInfo.saleability
