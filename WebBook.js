@@ -31,7 +31,7 @@ button.addEventListener('click', () => {
         
     }).catch(err => console.log(err));
 })
-// button.addEventListener('click', myfun);
+
 
 /*-------- Filter --------*/
 // full
